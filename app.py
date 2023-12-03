@@ -19,3 +19,24 @@ with st.form("my_form"):
         st.write(f"タイヤの外径は: {diameter:.2f} mmです。")
 
     st.form_submit_button("クリア", on_click=lambda: st.experimental_rerun())
+# フッターの追加
+footer = """
+    <style>
+    .footer {
+        position: fixed;
+        right: 0;
+        bottom: 0;
+        width: 100%;
+        background-color: white;
+        text-align: right;
+        font-size: smaller;
+        border-top: 1px solid #ddd;
+        padding: 5px;
+    }
+    </style>
+    <div class='footer'>
+        Copyright (c) 2023 Kenji Tanaka<br>
+        Released under the <a href="https://opensource.org/licenses/mit-license.php" target="_blank">MIT license</a>
+    </div>
+    """
+st.markdown(footer, unsafe_allow_html=True)
