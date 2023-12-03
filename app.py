@@ -19,7 +19,8 @@ with st.form("my_form"):
         st.write(f"タイヤの外径は: {diameter:.2f} mmです。")
 
     st.form_submit_button("クリア", on_click=lambda: st.experimental_rerun())
-# フッターの追加footer = """
+# フッターの追加
+footer = """
     <style>
     .footer {
         position: fixed;
