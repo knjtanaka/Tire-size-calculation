@@ -27,7 +27,7 @@ footer = """
         right: 0;
         bottom: 0;
         width: 100%;
-        background-color: white;
+        background-color: black;
         text-align: center;
         font-size: smaller;
         border-top: 1px solid #ddd;
